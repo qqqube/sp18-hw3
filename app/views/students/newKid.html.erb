@@ -1,0 +1,12 @@
+<%= form_tag students_path do %>
+  <%= label_tag(:student_id, "Student ID") %>
+  <%= text_field_tag(:student_id) %>
+
+  <%= label_tag(:fav_color, "Favorite Color") %>
+  <%= text_field_tag(:fav_color, nil) %>
+
+  <%= label_tag(:fav_animal, "Favorite Animal") %>
+  <%= text_field_tag(:fav_animal) %>
+
+  <%= submit_tag("Create Kid") %>
+<% end %>
